@@ -1,0 +1,180 @@
+/* Звернення до всіх Єлементів */
+
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/* Reset CSS End */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 970px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin: 0 auto;
+}
+
+/* Header Start */
+.header__nav {
+    border-bottom: 1px solid #828282;
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    list-style: none;
+
+}
+
+.header__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+
+    text-decoration: none;
+    color: #828282;
+}
+
+.about {
+    font-family: 'Open Sans';
+    width: Fixed (970px)px;
+    height: Fixed (500px)px;
+    top: 589px;
+    left: 235px;
+    padding: 100px 480px 100px 480px;
+    gap: 50px;
+    opacity: 0px;
+
+}
+
+/* Header End */
+/* about */
+.sub-title {
+    line-height: 22px;
+    width: Fixed (970px)px;
+    height: Fixed (564px)px;
+    top: 1089px;
+    left: 235px;
+    padding: 0px 22px 0px 22px;
+    gap: 50px;
+    opacity: 0px;
+}
+
+
+/* about end */
+
+
+/* skils Start */
+.k0 {
+    padding: 100px 480px 100px 480px;
+
+}
+
+.about {
+    font-family: 'Open Sans';
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28.51px;
+    text-align: center;
+    text-underline-position: 'from-font';
+    text-decoration-skip-ink: none;
+
+
+}
+
+.k1 {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28.51px;
+    text-align: center;
+    padding: 100px 80px 100px 80px;
+}
+
+.s4 {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28.51px;
+    text-align: center;
+    padding: 100px 80px 100px 80px;
+}
+
+.s5 {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28.51px;
+    text-align: center;
+    padding: 100px 80px 100px 80px;
+}
+
+.s6 {
+    font-family: Courier;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25.51px;
+    text-align: center;
+    padding: 1px 80px 1px 80px;
+}
+
+.contact-container {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-container h2 {
+    font-size: 24px;
+}
+
+.contact-container p {
+    font-size: 16px;
+    color: #666;
+}
+
+.s7 {
+    background-color: black;
+    color: white;
+    padding: 7px 11px;
+    border-radius: 39px;
+    bottom: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #999;
+    margin-top: 15px;
+}
+
+/* skill end */
