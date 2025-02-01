@@ -15,7 +15,10 @@ img {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #c9c9c9;
 }
+
+
 
 .container {
     max-width: 970px;
@@ -47,9 +50,10 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
-
+    padding: 10px 50px 10px 3ex;
     text-decoration: none;
     color: #828282;
+    border-radius: 10px;
 }
 
 .about {
@@ -58,14 +62,18 @@ body {
     height: Fixed (500px)px;
     top: 589px;
     left: 235px;
-    padding: 100px 480px 100px 480px;
-    gap: 50px;
+    padding: 80px 100px 100px 80px;
+    gap: 25px;
     opacity: 0px;
 
 }
 
 /* Header End */
 /* about */
+.text:nth-of-type(all) {
+    font-weight: lighter
+}
+
 .sub-title {
     line-height: 22px;
     width: Fixed (970px)px;
@@ -77,22 +85,23 @@ body {
     opacity: 0px;
 }
 
+.tile {
+    text-align: left;
+    line-height: 30px;
+    font-size: x-large;
+}
+
 
 /* about end */
 
 
 /* skils Start */
-.skils {
-    margin: 3px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
 .about {
     font-family: 'Open Sans';
-    font-size: auto;
+    font-size: xx-large;
     font-weight: auto;
-    line-height: 29px;
+    line-height: 60px;
     text-align: center;
     text-underline-position: 'from-font';
     text-decoration-skip-ink: none;
@@ -113,15 +122,15 @@ body {
     font-weight: 400;
     line-height: 28.51px;
     text-align: center;
-    padding: 100px 80px 100px 80px;
+    padding: 60px 80px 60px 80px;
 }
 
 .s5 {
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 28.51px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27.51px;
     text-align: center;
-    padding: 100px 80px 100px 80px;
+    padding: 60px 30px 60px 30px;
 }
 
 .s6 {
@@ -177,6 +186,45 @@ body {
     font-size: 14px;
     color: #999;
     margin-top: 15px;
+}
+
+.s7:hover {
+    background-color: cornflowerblue;
+    transition: all 0.4s;
+}
+
+.s7:active {
+    background-color: rgb(19, 53, 117);
+    transition: all 0.4s;
+}
+
+.header__link:hover {
+    margin: 5%;
+    opacity: 1;
+    background-color: #312834;
+    color: aliceblue;
+    transition: all 0.4s;
+}
+
+.header__link:active {
+    background-color: #8a00fb;
+    color: aliceblue;
+    transition: all 0.4s;
+}
+
+.header__list {
+    background-color: #6283b6;
+}
+
+
+:nth-child(1) {
+    mix-blend-mode: multiply;
+}
+
+.containerS10 a:hover img {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.4s;
 }
 
 /* .contact:nth-child(:last-child) {}*/

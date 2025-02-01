@@ -1,0 +1,33 @@
+.btn {
+    padding: 5px 10px;
+    background-color: blueviolet;
+    border: none;
+    color: aquamarine;
+    border-radius: 10px;
+    min-width: 100px;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.btn:hover {
+    color: aliceblue;
+    background-color: navy;
+}
+
+.btn:active {
+    color: rgb(152, 86, 58);
+    background-color: rgb(126, 126, 148);
+}
+
+/* через один */
+.list_item:nth-child(2n) {
+    background-color: gray;
+}
+
+.list_item:nth-child(3) {
+    background-color: rgb(131, 51, 104);
+}
+
+.list_item:last-child {
+    background-color: blue;
+}

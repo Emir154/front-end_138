@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* псевдо элементы */
+.title::before {
+    content: 'hi'
+}
+
+.title-2::after {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: aquamarine;
+}
+
+.title-3::after {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: rgb(63, 82, 76);
+}

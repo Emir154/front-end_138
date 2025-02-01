@@ -53,8 +53,9 @@ p {
 }
 
 .link {
-    text-decoration: none;
-    color: #383430;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: underline;
+    color: hsl(30, 8%, 20%);
 }
 
 /* .link:hover {
@@ -183,4 +184,9 @@ p {
     width: 20px;
     color: #bcbcbc;
     /* background-color: #F66E6E; */
+}
+
+* {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }

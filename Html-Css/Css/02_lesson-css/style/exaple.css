@@ -1,0 +1,49 @@
+.title-2:hover::after {
+    width: 100px;
+}
+
+.box_btn::after {
+    content: ⬇️;
+    font-size: 12px;
+    padding-left: 5px;
+
+}
+
+.box_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s
+}
+
+.box:hover .box_content::after {
+    content: ⬆️;
+}
+
+.but1 {
+    /* Secondary / Normal */
+    background-color: #06B25F;
+    color: white;
+    position: absolute;
+    width: 160px;
+    height: 42px;
+    left: 392px;
+    top: 108px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: none;
+    padding: '';
+    align-items: center;
+
+}
+
+.but1:hover {
+    /* Secondary / Normal */
+    background-color: rgb(115, 201, 201);
+    color: azure;
+}
+
+.but1:active {
+    /* Secondary / Normal */
+    background-color: rgb(157, 44, 180);
+    color: beige;
+}
