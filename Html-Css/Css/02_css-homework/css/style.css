@@ -39,7 +39,7 @@ body {
 .header__list {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
     list-style: none;
@@ -55,6 +55,8 @@ body {
     color: #828282;
     border-radius: 10px;
 }
+
+
 
 .about {
     font-family: 'Open Sans';
@@ -226,6 +228,7 @@ body {
     opacity: 0.6;
     transition: all 0.4s;
 }
+
 
 /* .contact:nth-child(:last-child) {}*/
 
