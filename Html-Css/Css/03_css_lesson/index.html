@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fe_138.3Feb</title>
+    <style>
+        /* звернення до елементу в середині .hero */
+        .hero .hero_title {
+            color: blue;
+        }
+
+        /* звернення до елементу */
+        .hero_title {
+            color: aqua;
+        }
+
+        .hero.hero--dark {
+            background-color: chartreuse;
+        }
+
+        .hero>.container {
+            background-color: darkslateblue;
+        }
+
+        .hero_title+.hero_text {
+            color: magenta;
+        }
+
+        /* .hero_title~.hero_text {
+            color: rgb(0, 255, 110);
+        } */
+        .menu_item {
+            display: flex;
+            background-color: blueviolet;
+            padding: 0px 12px;
+        }
+
+        .menu_label {
+            padding: 12px;
+        }
+
+        .menu_label {
+            display: block;
+        }
+
+        .menu_input {
+            display: block;
+        }
+
+        .menu_sub-item {
+            font-family: Roboto;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 12.89px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <section class="hero hero--dark">
+        <div class="container">
+            <h1 class="hero_title">title</h1>
+            <p class="hero_text">title</p>
+        </div>
+    </section> -->
+    <div class="menu">
+        <div class="menu__item">
+            <input id="11" type="checkbox" class="menu__input">
+            <label for="11" class="menu_label">
+                <span class="menu_text">a lot of pickles</span>
+                <span class="menu_sub-text">(css diner)</span>
+            </label>
+        </div>
+    </div>
+
+</body>
+
+</html>
