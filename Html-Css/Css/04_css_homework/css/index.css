@@ -14,10 +14,11 @@
     --main-font: sans-serif, "Montserrat";
 }
 
-body {
+.main_container {
+    justify-content: space-between;
     font-family: var(--main-font);
-    max-width: 1440px;
-    height: 3709px;
+    margin: 0 auto;
+    width: 1440px;
 }
 
 .first_screen {
@@ -25,39 +26,107 @@ body {
     padding-top: 50px;
 }
 
+.header_nav {
+    width: 1200px;
+    gap: 150px;
+    display: flex;
+    align-items: center;
+}
+
 .header {
     display: flex;
     width: 1440px;
     height: 80px;
-    justify-content: center;
+    margin: 0 auto;
     background-color: var(--bg-white);
 }
 
-.content {
-    width: 100%;
-    max-width: 950px;
+.nav_menu {
+    width: 1200px;
     display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 352px;
+}
+
+.content {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.container_first_box {
+    background-image: url(../img/bg.png);
+    background-position: bottom center;
+    background-size: cover;
+    display: flex;
+    padding-top: 17px;
+    width: 1440px;
+    height: 388.24px;
+}
+
+.in_box {
+    justify-content: space-between;
+    display: flex;
+    width: 1200px;
+    height: 175px;
+}
+
+.container_image_complete {
+    margin-top: 60px;
+    width: 505px;
+    height: 256px;
 }
 
 .container {
     display: flex;
     flex-direction: row-reverse;
     margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
+    width: 1200px;
+}
+
+.container_footer {
+    justify-content: center;
+    margin: 0 auto;
+    gap: 100px;
+    display: flex;
+    width: 1200px;
+    padding-top: 100px;
+}
+
+.container_registration {
+    width: 340px;
+    height: 207px;
+}
+
+.container_mini_registration {
+    width: 280px;
+    height: 57px;
+}
+
+.container_links {
+    display: inline;
+    width: 135px;
+    height: 209px;
 }
 
 .box_down {
+    width: 1440px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     padding-top: 100px;
-    gap: 120px;
+    gap: 199px;
 }
 
-.header_nav {
-    gap: 100px;
-    display: inline-flex;
-    align-items: center;
+
+.box_down_third {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 119px;
 }
 
 .logo {
@@ -73,17 +142,6 @@ body {
     font-weight: bold;
     color: var(--color-blue);
     margin-right: 40px;
-}
-
-.nav_menu {
-
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-grow: 1;
-    width: 352px;
-    height: 28px;
 }
 
 .name {
@@ -109,26 +167,22 @@ body {
 }
 
 .btn {
-    max-width: 1200px;
+    justify-content: center;
+    display: flex;
+    width: 152px;
     text-decoration: none;
+    margin: 9px;
     padding: 10px 41px;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .button {
+    justify-content: right;
     text-decoration: none;
-    max-width: 270px;
-    margin: 0 0 0 auto;
     display: flex;
-    width: 100%;
-    cursor: pointer;
 }
 
-button.btn {
-    border: none;
-    margin-top: 27px;
-}
 
 .btn:nth-of-type(1) {
     background: var(--bg-whitegrey);
@@ -144,7 +198,7 @@ button.btn {
 .btn_1 {
     margin-top: 20px;
     border: none;
-    max-width: 1200px;
+    width: 170px;
     text-decoration: none;
     padding: 10px 41px;
     border-radius: 5px;
@@ -155,7 +209,6 @@ button.btn {
 
 .btn_2 {
     border: none;
-    max-width: 1200px;
     text-decoration: none;
     width: 180px;
     height: 50px;
@@ -171,63 +224,41 @@ button.btn {
     color: white;
 }
 
+.button_fix_role {
+    margin: 0 auto;
+    width: 180px;
+    height: 50px;
+}
+
 .info {
     padding: 20px 20px;
-    max-width: 500px;
-    max-height: 231px;
+    height: 231px;
 }
 
 .hero_text {
     color: var(--color-brown);
-    max-width: 1200px;
     font-family: var(--main-font);
     font-size: 44px;
     line-height: 54px;
-    width: 100%;
 }
 
 .description:nth-last-child(1) {
     font-family: var(--main-font);
-    max-width: 1200px;
-    max-height: 91px;
     padding-top: 18px;
     font-size: 20px;
     width: 100%;
 }
 
 .description_2 {
-    text-align: center;
     width: 539px;
-    height: 88px;
+    height: 188px;
+    text-align: center;
     font-family: var(--main-font);
     font-size: 36px;
     line-height: 43.88px;
-    margin: auto;
-    margin-top: 50px;
     padding-top: 50px;
 }
 
-.second_screen {
-    padding-top: 100px;
-}
-
-.container_first_box {
-    background-image: url(../img/bg.png);
-    background-position: bottom center;
-    background-size: cover;
-    display: flex;
-    max-width: 2211px;
-    width: 2211px;
-    height: 388.24px;
-}
-
-.in_box {
-    display: flex;
-    max-width: 1200px;
-    width: 1200px;
-    height: 175px;
-    justify-content: space-between;
-}
 
 .sub_img {
     width: 50px;
@@ -243,7 +274,6 @@ button.btn {
 
 .text {
     font-family: var(--main-font);
-    max-width: 279px;
     height: 27px;
     font-size: 22px;
     line-height: 26.82px;
@@ -251,10 +281,20 @@ button.btn {
 }
 
 .second_text {
+    font-family: var(--main-font);
     margin-top: 10px;
     font-size: 16px;
     line-height: 26px;
     text-align: left;
+}
+
+.text_head {
+    width: 539px;
+    margin: 0 auto;
+}
+
+.second_screen {
+    padding-top: 80px;
 }
 
 .main_parahraf {
@@ -265,7 +305,6 @@ button.btn {
 }
 
 .second_parahraf {
-    padding-top: 10px;
     font-family: var(--main-font);
     font-size: 16px;
     line-height: 26px;
@@ -280,8 +319,43 @@ button.btn {
 }
 
 .second_parahraf {
+    margin-top: 10px;
     width: 525px;
     height: 78px;
+}
+
+.second_parahraf_tag {
+    font-family: var(--main-font);
+    width: 525px;
+    height: 78px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.links {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.quick_links {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.number_field {
+    width: 340px;
+    height: 50px;
+    gap: 10px;
+    margin-top: 23px;
+    border-radius: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-width: 1px;
 }
 
 .img {
@@ -292,4 +366,9 @@ button.btn {
     display: flex;
     width: 562px;
     height: 573px;
+}
+
+.complete_icon {
+    width: 35px;
+    height: 35px;
 }
