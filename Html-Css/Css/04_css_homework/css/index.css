@@ -59,14 +59,14 @@
     background-image: url(../img/bg.png);
     background-position: bottom center;
     background-size: cover;
-    display: flex;
-    padding-top: 17px;
+    display: inline;
+    padding-top: 40px;
     width: 1440px;
-    height: 388.24px;
+    height: 510.24px;
 }
 
 .in_box {
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     width: 1200px;
     height: 175px;
@@ -198,7 +198,7 @@
 .btn_1 {
     margin-top: 20px;
     border: none;
-    width: 170px;
+    width: 176px;
     text-decoration: none;
     padding: 10px 41px;
     border-radius: 5px;
@@ -225,6 +225,7 @@
 }
 
 .button_fix_role {
+    padding-top: 20px;
     margin: 0 auto;
     width: 180px;
     height: 50px;
@@ -290,6 +291,8 @@
 
 .text_head {
     width: 539px;
+    display: grid;
+    align-items: flex-end;
     margin: 0 auto;
 }
 
