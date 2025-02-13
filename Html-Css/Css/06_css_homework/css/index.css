@@ -14,6 +14,7 @@
     --bg-color-white: #FFFFFF;
     --bg-color-whiteblue: cornflowerblue;
     --linear-gradient: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.4) 1%, rgba(187, 186, 192, 0.2) 62%)center center / cover;
+    --liner-gradient-main: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), center center / cover;
     --box-shadow: 0px 0px 30px 0px #00000080;
     --item-opacity: 1;
     --transform: scale(1.01);
@@ -43,21 +44,33 @@
     justify-content: space-between;
     background: var(--linear-gradient);
     border-radius: 20px;
+    transition: --liner-gradient-main 0.4s;
 }
 
 .item:hover {
     box-shadow: var(--box-shadow);
     transform: var(--transform);
-    transition: all 0.3s;
-    background: center center / cover;
+    transition: all 0.5s;
 }
 
 .item_icons {
+    display: flex;
+    opacity: 0;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.item_icons:hover {
+    transition: opacity 0.4s;
+    cursor: pointer;
+    opacity: 1;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     border-radius: 8px;
 }
+
 
 .item_icon {
     padding: 12px;
@@ -69,25 +82,28 @@
 
 .item_icon:hover {
     opacity: 1;
-    transition: all 0.3s;
+    transition: all 0.4s;
     cursor: pointer;
 }
 
 .item_text {
     color: var(--bg-color-white);
     font-family: var(--font-bg-family);
-    background-color: var(--bg-color-darkgrey);
     border-radius: 5px;
     font-weight: 500;
     font-size: 20px;
     line-height: 23.44px;
 }
 
+.item_content:hover {
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
 .item_text_type1 {
     color: var(--bg-color-greytype1);
     font-weight: 500;
     font-family: var(--font-bg-family);
-    background: var(--linear-gradient);
     border-radius: 5px;
     font-size: 20px;
     line-height: 23.44px;
@@ -119,7 +135,8 @@
 
 .cities-works__item--1 {
     grid-column: span 1;
-    background-image: url(../img/Architectural_Photography/image-1.jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Architectural_Photography/image-1.jpg);
+    background-size: cover;
 }
 
 .cities-works__item--1:hover {
@@ -129,7 +146,8 @@
 
 .cities-works__item--2 {
     grid-column: span 2;
-    background-image: url(../img/Architectural_Photography/image.jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Architectural_Photography/image.jpg);
+    background-size: cover;
 }
 
 .cities-works__item--2:hover {
@@ -139,7 +157,8 @@
 
 .cities-works__item--3 {
     grid-column: span 2;
-    background-image: url(../img/Architectural_Photography/image\ \(1\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Architectural_Photography/image\ \(1\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--3:hover {
@@ -149,7 +168,8 @@
 
 .cities-works__item--4 {
     grid-column: span 1;
-    background-image: url(../img/Architectural_Photography/image-1\ \(1\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Architectural_Photography/image-1\ \(1\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--4:hover {
@@ -159,7 +179,8 @@
 
 .cities-works__item--5 {
     grid-column: span 1;
-    background-image: url(../img/Architectural_Photography/image-1\ \(2\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Architectural_Photography/image-1\ \(2\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--5:hover {
@@ -169,7 +190,8 @@
 
 .cities-works__item--6 {
     grid-column: span 2;
-    background-image: url(../img/Architectural_Photography/image\ \(2\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Architectural_Photography/image\ \(2\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--6:hover {
@@ -179,7 +201,8 @@
 
 .cities-works__item--7 {
     grid-column: span 1;
-    background-image: url(../img/Still_Life_Photography/image-1.jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Still_Life_Photography/image-1.jpg);
+    background-size: cover;
 }
 
 .cities-works__item--7:hover {
@@ -189,7 +212,8 @@
 
 .cities-works__item--8 {
     grid-column: span 2;
-    background-image: url(../img/Still_Life_Photography/image.jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Still_Life_Photography/image.jpg);
+    background-size: cover;
 }
 
 .cities-works__item--8:hover {
@@ -200,7 +224,8 @@
 .cities-works__item--9 {
     grid-column: span 2;
     grid-row: span 2;
-    background-image: url(../img/Still_Life_Photography/image\ \(1\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Still_Life_Photography/image\ \(1\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--9:hover {
@@ -212,7 +237,8 @@
 .cities-works__item--10 {
     grid-column: span 1;
     grid-row: span 2;
-    background-image: url(../img/Still_Life_Photography/image\ \(2\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Still_Life_Photography/image\ \(2\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--10:hover {
@@ -222,7 +248,8 @@
 
 .cities-works__item--11 {
     grid-column: span 2;
-    background-image: url(../img/Still_Life_Photography/image\ \(3\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Still_Life_Photography/image\ \(3\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--11:hover {
@@ -232,7 +259,8 @@
 
 .cities-works__item--12 {
     grid-column: span 1;
-    background-image: url(../img/Still_Life_Photography/image-1\ \(1\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Still_Life_Photography/image-1\ \(1\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--12:hover {
@@ -242,7 +270,8 @@
 
 .cities-works__item--13 {
     grid-column: span 1;
-    background-image: url(../img/Portrait_and_Fashion/image-1.jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Portrait_and_Fashion/image-1.jpg);
+    background-size: cover;
 }
 
 .cities-works__item--13:hover {
@@ -253,7 +282,8 @@
 .cities-works__item--14 {
     grid-column: span 1;
     grid-row: span 2;
-    background-image: url(../img/Portrait_and_Fashion/image.jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Portrait_and_Fashion/image.jpg);
+    background-size: cover;
 }
 
 .cities-works__item--14:hover {
@@ -264,7 +294,8 @@
 
 .cities-works__item--15 {
     grid-column: span 1;
-    background-image: url(../img/Portrait_and_Fashion/image-1\ \(2\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Portrait_and_Fashion/image-1\ \(2\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--15:hover {
@@ -274,7 +305,8 @@
 
 .cities-works__item--16 {
     grid-column: span 1;
-    background-image: url(../img/Portrait_and_Fashion/image-1\ \(1\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Portrait_and_Fashion/image-1\ \(1\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--16:hover {
@@ -285,7 +317,8 @@
 .cities-works__item--17 {
     grid-column: span 1;
     grid-row: span 2;
-    background-image: url(../img/Portrait_and_Fashion/image\ \(4\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Portrait_and_Fashion/image\ \(4\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--17:hover {
@@ -297,7 +330,8 @@
 .cities-works__item--18 {
     grid-column: span 1;
     grid-row: span 2;
-    background-image: url(../img/Portrait_and_Fashion/image\ \(1\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Portrait_and_Fashion/image\ \(1\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--18:hover {
@@ -308,7 +342,8 @@
 
 .cities-works__item--19 {
     grid-column: span 1;
-    background-image: url(../img/Portrait_and_Fashion/image-1\ \(3\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Portrait_and_Fashion/image-1\ \(3\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--19:hover {
@@ -318,7 +353,8 @@
 
 .cities-works__item--20 {
     grid-column: span 2;
-    background-image: url(../img/Portrait_and_Fashion/image\ \(2\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Portrait_and_Fashion/image\ \(2\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--20:hover {
@@ -328,7 +364,8 @@
 
 .cities-works__item--21 {
     grid-column: span 2;
-    background-image: url(../img/Portrait_and_Fashion/image\ \(3\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Portrait_and_Fashion/image\ \(3\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--21:hover {
@@ -338,7 +375,8 @@
 
 .cities-works__item--22 {
     grid-column: span 1;
-    background-image: url(../img/Portrait_and_Fashion/image-1\ \(4\).jpg);
+    background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34%, rgba(187, 186, 192, 0.2) 62.5%), url(../img/Portrait_and_Fashion/image-1\ \(4\).jpg);
+    background-size: cover;
 }
 
 .cities-works__item--22:hover {
