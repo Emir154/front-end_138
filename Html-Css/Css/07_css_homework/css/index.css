@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-ptsans: "PT Sans", serif;
+    --font-family-francois: "Francois One", serif;
+    --font-family-farro: "Farro", serif;
+    --font-family-tourney: "Tourney", serif;
+    --font-family-staatliches: "Staatliches";
+}
+
+.wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container {
+    display: inline;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.chapter {
+    font-family: var(--font-family-farro);
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 4%;
+    margin: 10px;
+}
+
+.chapter_text {
+    font-family: var(--font-family-ptsans);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    padding-top: 25px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head_text {
+    font-family: var(--font-family-tourney);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    margin-right: 35px;
+}
+
+.head_text_type1 {
+    text-transform: uppercase;
+    font-family: var(--font-family-staatliches);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+.header_text {
+    font-family: var(--font-family-francois);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    padding-top: 50px;
+}
