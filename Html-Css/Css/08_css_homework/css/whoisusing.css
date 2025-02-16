@@ -34,17 +34,17 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    transition: all 0.5s;
 }
 
 .nav_item:hover {
     filter: invert(1);
-    transition: all 0.4s;
-    transform: scale(1.05);
+    transform: rotateY(360deg);
+    cursor: pointer;
 }
 
 .nav_item:active {
     filter: invert(0);
-    transition: all 0.4s;
     transform: scale(1.01);
 }
 
