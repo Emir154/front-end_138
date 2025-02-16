@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-ptsans: "PT Sans", serif;
+    --font-family-francois: "Francois One", serif;
+    --font-family-farro: "Farro", serif;
+    --font-family-tourney: "Tourney", serif;
+    --font-family-staatliches: "Staatliches";
+}
+
+.wrapper {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+
+.main_text {
+    position: relative;
+    max-width: 785px;
+    top: -16%;
+    left: 535px;
+}
+
+.sticky {
+    position: sticky;
+    display: grid;
+    max-width: 385px;
+    top: 150px;
+    gap: 70px;
+}
+
+.chapter {
+    position: absolute;
+    font-family: var(--font-family-farro);
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 4%;
+    margin-left: 10px;
+    text-transform: none;
+}
+
+.chapter_text {
+    font-family: var(--font-family-ptsans);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    padding-top: 25px;
+}
+
+.background {
+    position: fixed;
+    z-index: -1;
+    top: 150px;
+    transform: translate(50%, -25%);
+    background: no-repeat url(../img/bg-picture.svg);
+}
+
+.header_link {
+    text-decoration: none;
+}
+
+.header_link:hover {
+    text-decoration: underline;
+}
+
+.head {
+    position: fixed;
+    top: 0;
+    width: 1440px;
+    background-color: white;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.head_text {
+    font-family: var(--font-family-tourney);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    margin-right: 35px;
+}
+
+.head_text_type1 {
+    text-transform: uppercase;
+    font-family: var(--font-family-staatliches);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+.header_text_type2 {
+    font-family: var(--font-family-francois);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header_text {
+    font-family: var(--font-family-francois);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    padding-top: 10px;
+}
+
+.line {
+    font-family: var(--font-family-francois);
+    text-transform: uppercase;
+    border-top: 8px solid #000000;
+    width: 100px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+
+.main_span {
+    font-family: var(--font-family-francois);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    padding-top: 50px;
+}

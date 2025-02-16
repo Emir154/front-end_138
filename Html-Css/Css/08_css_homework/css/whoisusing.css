@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-ptsans: "PT Sans", serif;
+    --font-family-francois: "Francois One", serif;
+    --font-family-farro: "Farro", serif;
+    --font-family-tourney: "Tourney", serif;
+    --font-family-staatliches: "Staatliches";
+    --colorgrey: #E6E6E6;
+}
+
+.wrapper {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nav_bar {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 210px);
+    align-items: center;
+    top: 238px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.nav_item {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.nav_item:hover {
+    filter: invert(1);
+    transition: all 0.4s;
+    transform: scale(1.05);
+}
+
+.nav_item:active {
+    filter: invert(0);
+    transition: all 0.4s;
+    transform: scale(1.01);
+}
+
+
+.mini_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 326px;
+    top: 150px;
+    gap: 20px;
+}
+
+.head {
+    position: fixed;
+    top: 0;
+    width: 1200px;
+    background-color: white;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head_text {
+    font-family: var(--font-family-tourney);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    margin-right: 35px;
+}
+
+.head_text_type1 {
+    text-transform: uppercase;
+    font-family: var(--font-family-staatliches);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27.5px;
+}
+
+.header_text {
+    font-family: var(--font-family-francois);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    padding-top: 10px;
+}
+
+.line {
+    font-family: var(--font-family-francois);
+    text-transform: uppercase;
+    border-top: 8px solid #000000;
+    width: 100px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.header_link {
+    text-decoration: none;
+}
+
+.header_link:hover {
+    text-decoration: underline;
+}
