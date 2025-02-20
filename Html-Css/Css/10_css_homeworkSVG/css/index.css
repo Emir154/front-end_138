@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fontfamilyroboto: "Roboto", serif;
+    --fontnunito: "Nunito Sans", serif;
+    --colorblue: #16133D;
+    --colorgreen: #3DB370;
+    --colorgrey: #7690A8;
+    --colorwhite: #EFEEF3;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 1440px;
+    min-width: 240px;
+}
+
+.main_container {
+    margin: auto;
+    max-width: 1170px;
+}
+
+.header {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.link {
+    font-family: var(--fontfamilyroboto);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: var(--colorgreen);
+    text-decoration: none;
+}
+
+svg:hover {
+    color: #3DB370;
+}
+
+.line {
+    max-width: 1440px;
+    min-width: 240px;
+    border: 1px solid #EFEEF3;
+}
+
+.icon_type1:hover {
+    display: none;
+}
+
+.container {
+    padding-top: 110px;
+}
+
+.container_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 50px;
+}
+
+.container_inbox {
+    margin: auto;
+    max-width: 290px;
+    margin: 40px;
+    border-width: 1px;
+}
+
+.container_item {
+    border: 1px, solid #EFEEF3;
+    justify-content: center;
+    max-width: 370px;
+    border-width: 1px;
+    border-radius: 8px;
+}
+
+.container_item:hover {
+    border: 1px, solid #3DB370;
+    transition: all 0.4s;
+}
+
+.container_text {
+    font-family: var(--fontfamilyroboto);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #7690A8;
+}
+
+.container_text_parahraf {
+    font-family: var(--fontnunito);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    color: #16133D;
+    padding-top: 10px;
+}
+
+.parahraf {
+    font-family: var(--fontfamilyroboto);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21.28px;
+    color: #16133D;
+}
+
+.description {
+    font-family: var(--fontfamilyroboto);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--colorblue);
+}
+
+.footer {
+    max-width: 1440px;
+    min-width: 240px;
+    background-color: #16133D;
+}
+
+.container_footer {
+    max-width: 1170px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.container_footer_block {
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+/* tablet */
+@media (max-width:767px) {
+    .container_box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 50px;
+    }
+}
