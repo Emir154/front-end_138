@@ -1,0 +1,18 @@
+// global
+@use './global/main.scss';
+// variablecolors
+@use './variable/variables';
+// button
+@use './global/button.scss';
+
+.hero {
+    @media (max-width: 500px) {
+        background-color: chartreuse;
+        width: 1000px;
+    }
+
+    &container {
+        width: 1000px;
+        background-color: aqua;
+    }
+}

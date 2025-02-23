@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fontraleway: "Raleway", serif;
+  --fontsans: "Open Sans", serif;
+  --colorgrey: #898F8F;
+  --colorgold: #FFCC00;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1440px;
+}
+
+.hero {
+  max-width: 1200px;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin: auto;
+}
+
+.decore {
+  display: flex;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.line {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.img {
+  padding-top: 60px;
+}
+
+.text__inbox {
+  display: flex;
+  justify-content: center;
+  font-family: var(--fontraleway);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #898F8F;
+}
+
+.lorem {
+  font-family: var(--fontraleway);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  margin: auto;
+  border-width: 1px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-color: #FFCC00;
+  background: transparent;
+  text-transform: uppercase;
+}
+
+.btn__text {
+  font-family: var(--fontsans);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+  color: #898F8F;
+  text-align: center;
+}
+
+.hero_text {
+  font-family: var(--fontraleway);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #898F8F;
+}
+
+.hero_text1 {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 60px;
+  padding-top: 30px;
+  line-height: 66px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--colorgold);
+}
+
+.name_text {
+  font-family: Roboto;
+  color: #898F8F;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42.19px;
+  text-align: center;
+}
+
+.container_inbox {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 130px;
+  padding-left: 78px;
+}
+
+.container_inbox_inform {
+  padding-top: 60px;
+}
+
+.box_social {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

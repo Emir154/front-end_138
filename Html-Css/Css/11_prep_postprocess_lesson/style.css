@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color: red;
+}
+
+h1 {
+  color: var(--color);
+}
+
+.button {
+  color: blueviolet;
+}
+
+.btn {
+  background-color: #F78D2E;
+  width: 176px;
+  height: 80px;
+  border-radius: 8px;
+  padding-top: 24px;
+  padding-right: 40px;
+  padding-bottom: 24px;
+  padding-left: 40px;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+}
+.btn .btn:hover {
+  background-color: #424886;
+}
+.btn--secondary:hover {
+  background-color: aqua;
+}
+
+@media (max-width: 500px) {
+  .hero {
+    background-color: chartreuse;
+    width: 1000px;
+  }
+}
+.herocontainer {
+  width: 1000px;
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=style.css.map */
