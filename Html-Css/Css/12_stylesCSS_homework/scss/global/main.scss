@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-white: #FFFFFF;
+    --bg-whitegrey: #BCD0E5;
+    --color-blue: #173A56;
+    --color-btnblue: #007BFF;
+    --colorgreyE4: #E4E4E4;
+    --colorgrey54: #545454;
+    --colorgrey96: #969696;
+    --main-fontroboto: "Roboto", serif;
+}
+
+.container {
+    max-width: 570px;
+    height: 590px;
+    margin: auto;
+}
+
+.register_ground {
+    display: grid;
+    padding: 35px;
+    padding-top: 180px;
+    min-width: 320px;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    .head_text {
+        display: flex;
+        align-items: center;
+    }
+
+    .head__text {
+        font-family: var(--main-fontroboto);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .input___name {
+        display: flex;
+        justify-content: space-between;
+
+        .input__name {
+            border: 1px solid;
+            height: 38px;
+            border-radius: 6px;
+            border-color: var(--colorgreyE4);
+        }
+
+
+        .k {
+            display: grid;
+            max-width: 245px;
+            width: 100%;
+        }
+
+    }
+
+    .input_email {
+        display: grid;
+
+        .input__email {
+            border: 1px solid;
+            border-radius: 6px;
+            border-color: var(--colorgreyE4);
+            height: 38px;
+        }
+    }
+
+    .radcheck {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .boxdiv {
+        height: 38px;
+        border-radius: 7px;
+        display: flex;
+        max-width: 500px;
+        width: 100%;
+        justify-content: center;
+        background-color: #007BFF;
+        margin: auto;
+    }
+
+    .btn {
+        color: #FFFFFF;
+        font-family: var(--main-fontroboto);
+        text-decoration: none;
+        margin: auto;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.1px;
+    }
+
+    .terms {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+
+        .bottom_text {
+            max-width: 397px;
+        }
+
+        .blue_text {
+            color: #007BFF;
+        }
+
+    }
+}
+
+.profileground {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 35px;
+
+    .k {
+        display: grid;
+        max-width: 245px;
+        width: 100%;
+    }
+
+    .head_text {
+        display: flex;
+        align-items: center;
+    }
+
+    .head__text {
+        font-family: var(--main-fontroboto);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        cursor: pointer;
+    }
+
+    .profile-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .input-wrapper {
+        max-width: 138px;
+        position: relative;
+        display: grid;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .image-input {
+        max-width: 138px;
+        height: 40px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        outline: none;
+    }
+
+    .icon-camera {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        max-width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .delete-wrapper {
+        position: absolute;
+        top: 0px;
+        left: 145px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .icon-trash {
+        width: 20px;
+        height: 20px;
+    }
+
+    .upload-info {
+        color: #888;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .bottom_text1 {
+        font-family: var(--main-fontroboto);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.1px;
+        color: var(--colorgrey96);
+        padding-top: 7px;
+    }
+
+    .input___name {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+
+        .input__name {
+            border: 1px solid;
+            height: 38px;
+            border-radius: 6px;
+            border-color: var(--colorgreyE4);
+        }
+    }
+
+    .btn1 {
+        padding-top: 20px;
+
+        .btn {
+            max-width: 150px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-btnblue);
+            color: #ffffff;
+            font-family: var(--main-fontroboto);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: -0.1px;
+            border-radius: 7px;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    gap: 15px;
+
+    .footend1 {
+        color: #007BFF;
+        text-decoration: none;
+        font-family: var(--main-fontroboto);
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.1px;
+
+    }
+
+    .footend {
+        font-family: var(--main-fontroboto);
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.1px;
+        text-decoration: none;
+        color: var(--colorgrey54);
+    }
+
+}
+
+
+.text_input {
+    font-family: var(--main-fontroboto);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+    padding-bottom: 7px;
+}
+
+.bottom_text {
+    font-family: var(--main-fontroboto);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: var(--colorgrey96);
+    padding-top: 7px;
+}
+
+.line {
+    height: 1px;
+    background-color: var(--colorgreyE4);
+}
