@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colordeeppurple: #392C72;
+  --colordeepgrey: #4F4F4F;
+  --colorgreymiddle: #828282;
+  --colorlight: #BDBDBD;
+  --colorpurplelight: #9E8CFC;
+  --colorred: #EA5455;
+  --coloryellow: yellow;
+  --colorgreen: #6FCF97;
+  --colordarkblue: #283046;
+  --colorbluedarken: #283046;
+  --montserratfont: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  margin: auto;
+  display: flex;
+}
+
+.hero_main {
+  margin-left: 20px;
+}
+
+.hero_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px -2px 36px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -2px 36px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -2px 36px -10px rgba(0, 0, 0, 0.75);
+}
+.hero_header .__imgsrcnone {
+  cursor: pointer;
+  padding: 0 30px;
+}
+.hero_header .__imgsrc {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.hero_header .__imgsrc:hover {
+  filter: invert(25%) sepia(85%) saturate(350%) hue-rotate(230deg);
+}
+.hero_header .container_theme {
+  display: flex;
+  padding: 0 20px;
+}
+.hero_header .container___nav {
+  display: flex;
+  padding-right: 20px;
+  align-items: center;
+  font-family: var(--montserratfont);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.94px;
+  letter-spacing: 0%;
+  color: #4F4F4F;
+}
+
+.container__nav {
+  display: flex;
+  align-items: center;
+}
+
+.container_nav {
+  display: flex;
+  padding-left: 40px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.menu {
+  position: relative;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1490196078);
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 4.47vw;
+  max-width: 55px;
+  min-width: 75px;
+  padding-top: 20px;
+}
+
+.icon {
+  position: absolute;
+  left: 62px;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.icon1 {
+  display: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu:hover {
+  width: 14.45vw;
+  max-width: 220px;
+}
+.menu:hover .icon {
+  display: none;
+}
+.menu:hover .icon1 {
+  position: absolute;
+  display: block;
+  left: 197px;
+  top: 32px;
+  z-index: 1;
+}
+.menu:hover .menu__item_text {
+  position: relative;
+  left: 20px;
+  text-transform: uppercase;
+  display: block;
+  font-family: var(--montserratfont);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+  color: var(--colorgreymiddle);
+}
+.menu:hover .menu__text1 {
+  display: block;
+}
+.menu:hover .menu__text {
+  display: block;
+}
+.menu:hover .dots-container {
+  display: none;
+}
+
+.menu__item_text {
+  display: none;
+}
+
+.menu__item-line-row {
+  position: relative;
+  color: #e22121;
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+.menu__text1 {
+  display: none;
+  font-family: var(--montserratfont);
+  line-height: 1;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.94px;
+  letter-spacing: 0%;
+  color: var(--colordeeppurple);
+}
+
+.menu__text {
+  display: none;
+  font-family: var(--montserratfont);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+.menu__img {
+  width: 26px;
+  height: 26px;
+}
+
+.menu__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 46px;
+  gap: 10px;
+  padding: 0 10px;
+  left: 10px;
+}
+
+.menu__item:hover {
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: 0px;
+  transition: all 0.2s;
+  width: 100%;
+  background: #9E8CFC;
+  box-shadow: 0px 0px 20px 0px rgba(158, 140, 252, 0.6980392157);
+  cursor: pointer;
+}
+.menu__item:hover .menu__img {
+  filter: brightness(0) invert(1);
+}
+
+.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 8px;
+  max-width: 40px;
+}
+
+.dot {
+  width: 50px;
+  height: 4px;
+  background-color: var(--colorpurplelight);
+  border-radius: 4px;
+}
+
+.dot:nth-child(2) {
+  width: 125px;
+}
+
+/*# sourceMappingURL=styles.css.map */
