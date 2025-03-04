@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1347px;
+}
+.wrapper .img {
+  width: 326px;
+  height: 478px;
+}
+.wrapper .container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  margin: auto;
+  padding: 10px;
+}
+.wrapper .box {
+  width: 150px;
+  height: 220px;
+  perspective: 1000px;
+  padding: 3px;
+}
+.wrapper .card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.wrapper .box:hover .card {
+  transform: rotateY(180deg);
+}
+.wrapper .img,
+.wrapper .img1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.wrapper .img1 {
+  transform: rotateY(180deg);
+}
+
+/*# sourceMappingURL=styles.css.map */
