@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeofdataJS22.03.25</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="fleshka">
+            <span>Введіть обсяг флешки в ГБ(1024 МБ)</span>
+            <input id="gigabyteinp" type="text">
+            <span id="infoMB">Файли 850 МБ: 0 шт</span>
+            <span id="spaceMB">Вільного місця: -- МБ</span>
+            <button id="btn">Порахувати</button>
+            <div class="fleshka deposit-calculator">
+                <h2>Калькулятор депозиту</h2>
+                <label for="depositAmount">Сума вкладу (₴):</label>
+                <input id="depositAmount" type="number" placeholder="Введіть суму">
+
+                <button id="calculateBtn">Розрахувати</button>
+
+                <div class="result">
+                    <span id="interestResult">Нараховані відсотки: 0 ₴</span>
+                </div>
+                <div class="fleshka choco-calculator">
+                    <h2>Калькулятор шоколадок</h2>
+                    <input type="number" id="moneyInput" placeholder="Скільки грошей в гаманці (в грн)?" />
+                    <input type="number" id="chocoPrice" placeholder="Ціна однієї шоколадки в гривнях?" />
+                    <button id="calculateBtn1">Розрахувати</button>
+                    <div id="result">Результат буде тут!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./javaScripts/scripts.js"></script>
+</body>
+
+</html>
