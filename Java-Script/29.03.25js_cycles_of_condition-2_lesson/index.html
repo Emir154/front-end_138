@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScripts</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>function</h2>
+        <button class="btn">start</button>
+        <section>
+        </section>
+        <button class="link">all</button>
+        <div class="test">
+            Вивід Гравців
+            <select class="sel">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+            </select>
+            <button class="btn1">Show</button>
+        </div>
+        <ul class="out"></ul>
+    </div>
+
+
+
+
+
+
+    <script>
+        // function declaration
+        // let link = document.querySelector('.link')
+        // let btn = document.querySelector('.btn')
+        // link.onclick = () => {
+        //     document.querySelector('section').innerHTML = `<div class="box">
+        //         img src="" class=""</div>`
+        // }
+        // function test() {
+        //     console.log('test')
+        // }
+
+
+
+
+        // let num1 = 52;
+        // let num2 = 39;
+
+        // function multiple(a, b) {
+        //     return a * b;
+        // }
+        // console.log(multiple(num1, num2));
+
+
+        // -------------------//
+
+
+
+
+        // age
+        // let checkage = 2025 - age
+        // if (checkage > 18) {
+        //     return 'OK'
+
+        //     return 'no'
+        //     function testAge(age) {
+        //         return 2025 - age
+        //     }
+        //     function userInfo(name, age) {
+        //         return `hello ${name} вам ${age}`
+        //     }
+
+        //     console.log(testAge(2000));
+        //     console.log(testAge(2222));
+        // }
+
+
+
+        // names 
+        function amesetN(name) {
+            return `<li>${name}</li>`
+        }
+        let sel1 = document.querySelector('.sel')
+        let button = document.querySelector('.btn1')
+        let out = document.querySelector('.out')
+        button.onclick = () => {
+
+            for (let i = 0; i < +sel1.value; i++) {
+                out.innerHTML += amesetN('sasha')
+            }
+        }
+
+    </script>
+</body>
+
+</html>
