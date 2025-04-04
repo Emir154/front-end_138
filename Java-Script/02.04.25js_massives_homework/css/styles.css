@@ -1,0 +1,11 @@
+body {
+  background-color: azure;
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
