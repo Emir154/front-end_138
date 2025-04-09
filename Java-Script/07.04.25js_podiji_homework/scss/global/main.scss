@@ -1,0 +1,31 @@
+body {
+    background-color: azure;
+}
+
+.item {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.out {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.item--green {
+    border: 1px solid aqua;
+}
+
+.item--red {
+    border: 1px solid brown;
+}
