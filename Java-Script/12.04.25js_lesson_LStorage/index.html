@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScripts</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        .light {
+            --text-color: #000;
+            --bg-color: #fff;
+        }
+
+        .dark {
+            --text-color: #fff;
+            --bg-color: #000;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+        }
+
+        .wrapper {
+            background-color: rgb(49, 86, 86);
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .button {
+            width: 120px;
+            height: 50px;
+            background-color: cornflowerblue;
+        }
+
+        main {
+            color: var(--text-color);
+            padding: 40px 16px;
+        }
+
+        p {
+            padding: 16px 0 40px;
+        }
+
+        .box {
+            border-radius: 10px;
+            width: 80px;
+            height: 30px;
+            background-color: cadetblue;
+        }
+
+        .box--active .box__item {
+            transform: translateX(50px);
+            transition: all 0.4s;
+            padding: 0;
+
+        }
+
+        .box__item {
+            border-radius: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <span>logo</span>
+        <p>menu</p>
+        <button class="Btn">Search all title</button>
+        <div class="box">
+            <div class="box__item"></div>
+        </div>
+    </div>
+    <main>
+        <h2>test title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias maxime totam tempora aliquam, quo
+            aliquid accusantium eaque quos at!</p>
+        <h2>test title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias maxime totam tempora aliquam, quo
+            aliquid accusantium eaque quos at!</p>
+        <h2>test title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias maxime totam tempora aliquam, quo
+            aliquid accusantium eaque quos at!</p>
+        <h2>test title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias maxime totam tempora aliquam, quo
+            aliquid accusantium eaque quos at!</p>
+        <h2>test title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias maxime totam tempora aliquam, quo
+            aliquid accusantium eaque quos at!</p>
+        <h2>test title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias maxime totam tempora aliquam, quo
+            aliquid accusantium eaque quos at!</p>
+
+    </main>
+    <script src="./javaScripts/scripts.js"></script>
+    <script src="./javaScripts/minumumLvl.js"></script>
+    <script src="./javaScripts/mediumLvl.js"></script>
+    <script src="./javaScripts/maxLvl.js"></script>
+</body>
+
+</html>
