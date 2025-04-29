@@ -1,0 +1,22 @@
+{
+  "name": "front-end_138",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emir154/front-end_138.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emir154/front-end_138/issues"
+  },
+  "homepage": "https://github.com/Emir154/front-end_138#readme",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  }
+}

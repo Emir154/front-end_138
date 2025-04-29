@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-yellow: #FFD907;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+}
+
+.button_se {
+    background-color: var(--color-yellow);
+    border-radius: 8px;
+    width: 176px;
+    height: 49px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        transition: all 0.4s;
+        background-color: coral;
+    }
+}
+
+.description {
+    width: 380px;
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+}
+
+.text {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    width: 380px;
+    padding: 15px 0 15px;
+}
+
+
+.swiper22 {
+    padding: 40px 0 40px;
+}
+
+
+.swiper-slide {
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+}
+
+.swiper {
+    max-width: 760px;
+    height: 376px;
+    padding-bottom: 40px;
+
+}
+
+.swiper-slide {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom, 8px);
+    top: var(--swiper-pagination-top, auto);
+    left: 0px;
+    bottom: 0px;
+    position: relative;
+    width: 100%;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #FFD907;
+}
+
+.swiper.mySwiper.swiper-coverflow.swiper-3d {
+    width: 760px;
+}

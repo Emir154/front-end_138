@@ -1,0 +1,28 @@
+body {
+  background-color: azure;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#btn {
+  width: 150px;
+}
+
+input {
+  width: 250px;
+  height: 20px;
+  margin: 5px;
+}
+
+.RegBtn {
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
