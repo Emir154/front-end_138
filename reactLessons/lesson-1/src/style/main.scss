@@ -1,0 +1,11 @@
+@use './variable/color';
+
+.hero {
+    &__title {
+        color: var(--color-flowerblue);
+    }
+}
+
+img {
+    width: 440px;
+}

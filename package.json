@@ -18,5 +18,8 @@
   "description": "",
   "devDependencies": {
     "gulp": "^5.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.89.0"
   }
 }
